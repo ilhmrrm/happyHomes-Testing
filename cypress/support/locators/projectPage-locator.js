@@ -8,8 +8,16 @@ module.exports = {
         Provinsi:   '.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.css-37fea1',
         landArea:    'input[name="surfaceArea"]',
         KsoName:     'input[name="ksoName"]',
-        buttonImg:   'button[type="button"]',
+        buttonImg:   'input[type="file"][accept=".pdf, image/*"]',
         ksoAddress:  'textarea[name="ksoAddress"]',
         priceProject:'input[name="projectValue"]',
+        buttonSubmit:'[data-cy="right-button-confirmation"]'
+    },
+
+    editProjectID: {
+        projectEdit: '.css-1h79skh',
+        stakeName: 'input[placeholder="Contoh: Asep Kunandar"]',
+        stakePhone: 'input[name="phoneNumber"]',
+        stakeAddress: 'input[name="address"]',
     }
 }

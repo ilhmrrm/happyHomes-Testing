@@ -1,7 +1,7 @@
 module.exports = {
     loginPage: {
-        email: 'automation12@gmail.com',
-        password: 'automation12@gmail.com',
+        email: 'automation2@gmail.com',
+        password: 'automation2@gmail.com',
         invalidPass: '123456admin',
         invalidEmail: 'automation12gmail.com'
     },
@@ -15,5 +15,11 @@ module.exports = {
         KsoAddress: 'Jl. Jendral Sudirman, 12910',
         priceProject: '1500000000',
         imgLoct: '../img/dummy.jpg'
+    },
+
+    stakePage:{
+        stakeName: 'automation1234',
+        stakePhone: '123456789',
+        stakeAddress: 'Jl. Jendral Sudirman, 12910',
     }
 }

@@ -53,10 +53,9 @@ class ProjectPage {
     }
 
     async imgLoct() {
-        const filePath = '../../../fixtures/dummy.jpg';
-        cy.get(locator.dataProjectID.buttonImg).contains('Pilih')
-            .click()
-            .attachFile(filePath).wait(2000)
+            const filePath = 'cypress/fixtures/dummy.jpg';
+            cy.get('input[type="file"]')
+                .selectFile(filePath, {force:true})
     }
 
     async KsoName() {
@@ -68,6 +67,11 @@ class ProjectPage {
     async priceProject() {
         cy.get(locator.dataProjectID.priceProject)
             .type(bulkTexts.createPage.priceProject, {force: true})
+    }
+
+    async clickCreate() {
+        cy.get('[data-cy="right-button-confirmation"]')
+            .click().wait(5000)
     }
 }
 
