@@ -10,7 +10,17 @@
 //
 //
 // -- This is a parent command --
+import 'cypress-file-upload';
+
 // Cypress.Commands.add('login', (email, password) => { ... })
+const LoginPage = require('../support/pages/LoginPage/loginPage')
+
+Cypress.Commands.add('login', () => {
+    LoginPage.openLoginPage()
+    LoginPage.fillEmail()
+    LoginPage.fillPassword()
+    LoginPage.clickLogin()
+})
 //
 //
 // -- This is a child command --

@@ -25,6 +25,18 @@ class LoginPage {
             .should('have.value', bulkTexts.loginPage.invalidPass, timeout.e2e)
     }
 
+    async invalidEmail() {
+        cy.xpath(locator.dataTestID.email)
+            .type(bulkTexts.loginPage.invalidEmail, {force: true})
+    }
+
+    async wrongEmail() {
+        cy.get('p[class*="Mui-error"]')
+            .contains('Email/Username tidak terdaftar')
+            .should('be.visible')
+        cy.wait(1000)
+    }
+
     async wrongPass() {
         cy.get('p[class*="Mui-error"]')
         // cy.get('p[id=":R2aalb6:-helper-text"]')

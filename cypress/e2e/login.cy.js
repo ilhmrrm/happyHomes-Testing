@@ -13,10 +13,17 @@ describe('Login Feature', () => {
             .should('be.visible')
     })
 
-    it.only('Failed Login', () => { 
+    it('Failed Login', () => { 
         LoginPage.fillEmail()
         LoginPage.invalidPass()
         LoginPage.clickLogin()
         LoginPage.wrongPass()
+    })
+
+    it('Failed Login wiht wrong email', () => { 
+        LoginPage.invalidEmail()
+        LoginPage.fillPassword()
+        LoginPage.clickLogin()
+        LoginPage.wrongEmail()
     })
 })
