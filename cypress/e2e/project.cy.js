@@ -40,7 +40,7 @@ describe('Project Feature', () => {
         EditProjectPage.clickAdd()
     })
 
-    it.only('Edit StakeHolder', () => {
+    it('Edit StakeHolder', () => {
         EditProjectPage.projectEdit()
         EditProjectPage.StakeHolderMenu()
 
