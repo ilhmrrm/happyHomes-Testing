@@ -19,5 +19,16 @@ module.exports = {
         stakeName: 'input[placeholder="Contoh: Asep Kunandar"]',
         stakePhone: 'input[name="phoneNumber"]',
         stakeAddress: 'input[name="address"]',
-    }
+    },
+
+    landPageID: {
+        menuButton: '.MuiTabs-flexContainer > :nth-child(2)',
+        addLandButton: '.css-pqgty > .MuiButton-root',
+        ownStake:   '#async-stakeholder',
+        taxNumber: 'input[placeholder="Contoh: 112233344455566667"]',
+        priceTransaction: 'input[placeholder="Contoh: Rp125.000"]',
+        plotNumber: 'input[placeholder="Contoh : 123"]',
+        submitButton: 'button[data-cy="right-button-confirmation"]',
+        landSize: 'input[placeholder="Contoh : 1200"]'
+    },
 }

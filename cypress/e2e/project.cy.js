@@ -1,6 +1,7 @@
 import('../support/commands.js');
 const ProjectPage = require('../support/pages/projectPage/projectPage')
 const EditProjectPage = require('../support/pages/projectPage/editProject')
+const LandPage = require('../support/pages/projectPage/landPage')
 
 
 describe('Project Feature', () => {
@@ -26,7 +27,7 @@ describe('Project Feature', () => {
         EditProjectPage.addMap()
     })
     
-    it.only('Success Add StakeHolder', () => {
+    it('Success Add StakeHolder', () => {
         EditProjectPage.projectEdit()
         EditProjectPage.StakeHolder()
         EditProjectPage.StakeName()
@@ -36,5 +37,19 @@ describe('Project Feature', () => {
         EditProjectPage.stakeFileUpload()
         EditProjectPage.identityDoc()
         EditProjectPage.clickAdd()
+    })
+
+    it.only('Success Create Land Feature', () => {
+        EditProjectPage.projectEdit()
+        LandPage.landMenu()
+        LandPage.createNewLand()
+        LandPage.ownName()
+        LandPage.taxNumber()
+        LandPage.priceTransaction()
+        LandPage.mapRincik()
+        LandPage.plotNumber()
+        LandPage.stepChoice()
+        LandPage.landSize()
+        LandPage.clickSubmit()
     })
 })

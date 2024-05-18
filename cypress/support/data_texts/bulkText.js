@@ -21,5 +21,12 @@ module.exports = {
         stakeName: 'automation1234',
         stakePhone: '123456789',
         stakeAddress: 'Jl. Jendral Sudirman, 12910',
-    }
+    },
+
+    tanahPage: {
+        taxNumber: '12345698123',
+        priceLand: '500000000',
+        plotNumber:'456789876',
+        luasTanah: '1500',
+    },
 }

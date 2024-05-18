@@ -1,6 +1,5 @@
 module.exports = {
     e2e: {
-
-        pageLoadTimeout: 30000,
+        pageLoadTimeout: 3000,
     },
 };

@@ -11,6 +11,7 @@
 //
 // -- This is a parent command --
 import 'cypress-file-upload';
+import 'cypress-xpath';
 
 // Cypress.Commands.add('login', (email, password) => { ... })
 const LoginPage = require('../support/pages/LoginPage/loginPage')
