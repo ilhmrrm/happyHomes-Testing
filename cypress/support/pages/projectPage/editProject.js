@@ -80,12 +80,4 @@ class EditProjectPage {
     }
 }
 
-class EditStakeHolder {
-    async editStakeHolder() {
-        cy.get(':nth-child(1) > :nth-child(8) > .MuiButtonBase-root').click().wait(1000)
-        cy.get('.css-42rlcu > .MuiPaper-root > .MuiList-root > [tabindex="0"] > .MuiTypography-root').click({force: true})
-    }
-}
-
-module.exports = new EditStakeHolder()
 module.exports = new EditProjectPage()
