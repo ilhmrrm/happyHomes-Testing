@@ -17,7 +17,7 @@ class PaymentPage {
     async dropdownMenu() {
         cy.get(locator.PaymentID.dropdownMenu)
             .click(timeout.e2e)
-        cy.get('ul[role="listbox"] li').eq(0).click(timeout.e2e)
+        cy.get('ul[role="listbox"] li').eq(1).click(timeout.e2e)
     }
 
     async infoTagihan() {
@@ -33,7 +33,8 @@ class PaymentPage {
 
     async dateChoice() {
         cy.get(locator.PaymentID.choiceDate).click()
-        cy.xpath('//button[@data-timestamp="1715274000000"]').click()
+        cy.xpath('//button[@data-timestamp="1715274000000"]').click({force: true})
+            .wait(5000)
     }
 
     async imageInput() {

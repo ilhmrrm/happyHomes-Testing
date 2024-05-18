@@ -32,6 +32,6 @@ module.exports = {
 
     pagePayment: {
         paymentInfo: 'Tagihan 1',
-        nominal: '120000000',
+        nominal: '500000000',
     }
 }

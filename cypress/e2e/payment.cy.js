@@ -18,6 +18,18 @@ describe('Payment Feature', () => {
         PaymentPage.dateChoice()
         PaymentPage.imageInput()
 
-        PaymentPage.saveButton()
+        // PaymentPage.saveButton()
+    })
+
+    it.only('Verify Payment', () => {
+        PaymentPage.openPaymentPage()
+        cy.wait(2000)
+        cy.get('[value="/list"]').click({force: true})
+        cy.wait(2000)
+        cy.get('.css-x4k2ct > .MuiBox-root > .MuiButton-root').click({force: true})
+        cy.wait(2000)
+        cy.get('[data-cy="autocomplate-land"] > .MuiFormControl-root > .MuiInputBase-root').click({force: true})
+        cy.wait(2000)
+        cy.get('ul[role="listbox"]').find('li').eq(1).click()
     })
 })
