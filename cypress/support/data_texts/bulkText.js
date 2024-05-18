@@ -29,4 +29,9 @@ module.exports = {
         plotNumber:'456789876',
         luasTanah: '1500',
     },
+
+    pagePayment: {
+        paymentInfo: 'Tagihan 1',
+        nominal: '120000000',
+    }
 }
