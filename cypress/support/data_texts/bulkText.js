@@ -33,7 +33,7 @@ module.exports = {
     pagePayment: {
         paymentInfo: 'Tagihan 1',
         nominal: '500000000',
-        nominalCategory: '350000000',
+        nominalCategory: '100000000',
         keterangan: 'Automation description 1.0',
     }
 }
