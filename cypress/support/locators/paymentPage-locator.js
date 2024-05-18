@@ -15,14 +15,13 @@ module.exports = {
         dropDownTanah: '[data-cy="autocomplate-land"] > .MuiFormControl-root > .MuiInputBase-root',
         jenisTagihan: 'ul[role="listbox"]',
         menuTagihan: '[data-cy="autocomplate-bill"] > .MuiFormControl-root > .MuiInputBase-root',
-
-        paymentCategory: '#mui-component-select-method',
         
         nominal: 'input[placeholder="123"]',
         
         paymentMethod: '#mui-component-select-method',
         
         dateChoice: 'button[aria-label="Choose date"]',
+        todayDate: '.MuiPickersDay-today',
         
         penerima: '#mui-component-select-beneficiary',
         

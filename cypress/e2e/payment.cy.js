@@ -26,43 +26,33 @@ describe('Payment Feature', () => {
     it.only('Verify Payment', () => {
         // Jenis Tanah
         VerifyPayment.jenisTanah()
-        // cy.get('[value="/list"]').click({force: true})
-        // cy.wait(2000)
-        // cy.get('.css-x4k2ct > .MuiBox-root > .MuiButton-root').click({force: true})
-        // cy.wait(2000)
-        // cy.get('[data-cy="autocomplate-land"] > .MuiFormControl-root > .MuiInputBase-root').click({force: true})
-        // cy.wait(2000)
 
         // Jenis Tagihan
-        cy.get('ul[role="listbox"]').find('li').eq(1).click().wait(2000)
-        cy.get('[data-cy="autocomplate-bill"] > .MuiFormControl-root > .MuiInputBase-root').click({force: true})
-        cy.wait(2000)
-        cy.get('ul[role="listbox"]').find('li').eq(1).click().wait(2000)
+        VerifyPayment.jenisTagihan()
 
         // Payment Category
-        cy.contains('Pilih').click({force: true}).wait(2000)
-        cy.contains('li', 'BAYAR').click({force: true})
+        VerifyPayment.paymentCategory()
 
         // Nominal
-        cy.get('input[placeholder="123"]').type('350000000').wait(2000)
+        VerifyPayment.Nominal()
 
         // Payment Method
-        cy.get('#mui-component-select-method').click({force: true})
-        cy.get('li').contains('Transfer Bank').click({force: true}).wait(2000)
+        VerifyPayment.paymentMethod()
     
         // Date Choice
-        cy.get('button[aria-label="Choose date"]').click({force: true}).wait(2000)
-        cy.get('.MuiPickersDay-today').click({force: true}).wait(2000)
+        VerifyPayment.dateChoice()
 
         // Penerima
-        cy.get('#mui-component-select-beneficiary').click({force: true})
-        cy.get('#menu-beneficiary > .MuiPaper-root > .MuiList-root > .MuiButtonBase-root').click({force: true})
+        VerifyPayment.Penerima()
 
         // No Rekening
-        cy.get('#mui-component-select-beneficiaryAccountNumber').click({force: true}).wait(1000)
-        cy.get('#menu-beneficiaryAccountNumber > .MuiPaper-root > .MuiList-root > .MuiButtonBase-root').click({force: true})
-        
+        VerifyPayment.NoRekening()
+
         // Keterangan 
-        cy.get(':nth-child(10) > .css-13sljp9 > .MuiFormControl-root > .MuiInputBase-root').type('Automation description 1.0').wait(2000)
+        VerifyPayment.Keterangan()
+        
+        VerifyPayment.imgLoct()
+
+        VerifyPayment.saveButton()
     })
 })
