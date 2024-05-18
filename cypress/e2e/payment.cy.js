@@ -23,7 +23,7 @@ describe('Payment Feature', () => {
         PaymentPage.saveButton()
     })
 
-    it.only('Verify Payment', () => {
+    it('Verify Payment', () => {
         // Jenis Tanah
         VerifyPayment.jenisTanah()
 

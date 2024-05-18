@@ -39,7 +39,7 @@ describe('Project Feature', () => {
         EditProjectPage.clickAdd()
     })
 
-    it.only('Success Create Land Feature', () => {
+    it('Success Create Land Feature', () => {
         EditProjectPage.projectEdit()
         LandPage.landMenu()
         LandPage.createNewLand()
