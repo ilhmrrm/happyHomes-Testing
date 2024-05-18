@@ -45,7 +45,6 @@ class PaymentPage {
     }
 
     async saveButton() {
-        // cy.get('[data-cy="right-button-confirmation"]')
         cy.get(locator.PaymentID.saveButton)
             .click(timeout.e2e)
     }
